@@ -25,6 +25,7 @@
 	"dependencies": {
 		"@emotion/css": "^11.10.6",
 		"chakra-ui-svelte": "^0.2.7",
+		"openai": "^3.2.1",
 		"svelte-preprocess": "^5.0.3"
 	}
 }
