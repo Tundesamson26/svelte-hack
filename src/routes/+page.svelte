@@ -1,5 +1,5 @@
 <script>
-  import { imageStores } from "$lib/store/ArtStore";
+  import  imageStores from "$lib/store/ArtStore";
   import { Configuration, OpenAIApi } from "openai";
 
   let prompt;
@@ -27,9 +27,10 @@
 
 <h1 class="text-3xl font-bold">Image Generator</h1>
 <form action="">
-
+  <button on:click={fetchData}>Generate</button>
 </form>
-<button on:click={fetchData}>Generate</button>
+<!-- <img src={image} alt=""> -->
+
 
 <style lang="postcss">
   :global(html) {
