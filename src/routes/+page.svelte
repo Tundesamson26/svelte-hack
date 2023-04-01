@@ -1,8 +1,9 @@
 <script>
-  import { images } from "$lib/store/ArtStore";
+  import { imageStores } from "$lib/store/ArtStore";
   import { Configuration, OpenAIApi } from "openai";
 
-  let prompt = images;
+  let prompt;
+  let image = imageStores;
 
   const configuration = new Configuration({
     organization: "org-e4LTVTBp1C2nhyRwB1ZHhKL8",
@@ -26,7 +27,7 @@
 
 <h1 class="text-3xl font-bold">Image Generator</h1>
 <form action="">
-  
+
 </form>
 <button on:click={fetchData}>Generate</button>
 
