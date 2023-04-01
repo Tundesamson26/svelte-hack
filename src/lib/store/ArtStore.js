@@ -1,12 +1,12 @@
-// import { browser } from '$app/environment';
-// import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
+import { writable } from 'svelte/store';
 
-// const data = browser ? JSON.parse(window.localStorage.getItem('art-list') || "{}") ?? [] : [];
+const data = ""
 
-// export const arts = writable(data);
+export const images = writable(data);
 
-// arts.subscribe((value) =>{
-//     if(browser){
-//         localStorage.setItem('art-list', JSON.stringify(value))
-//     }
-// })
+images.subscribe((value) =>{
+    if(browser){
+        localStorage.setItem('art-list', JSON.stringify(value))
+    }
+})
