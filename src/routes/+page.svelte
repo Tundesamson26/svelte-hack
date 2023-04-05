@@ -1,5 +1,4 @@
 <script>
-  import image from "$lib/store/ArtStore";
   import { Configuration, OpenAIApi } from "openai";
 
   let prompt;
