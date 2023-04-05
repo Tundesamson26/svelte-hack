@@ -1,9 +1,9 @@
 <script>
-  import imageStores from "$lib/store/ArtStore";
+  import image from "$lib/store/ArtStore";
   import { Configuration, OpenAIApi } from "openai";
 
   let prompt;
-  let image = "";
+  
 
   const configuration = new Configuration({
     organization: "org-e4LTVTBp1C2nhyRwB1ZHhKL8",
@@ -32,7 +32,6 @@
   <form action="" >
     <div class="flex justify-between w-full">
       <input
-        bind:value={image}
         type="text"
         placeholder="enter image description here..."
         class="block rounded-md w-screen border-0 py-1.5 ml-4 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -42,7 +41,7 @@
   </form>
 </div>
 <div>
-  <img src={image} alt="" />
+  <img src="" alt="" />
 </div>
 
 <style lang="postcss">

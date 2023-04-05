@@ -5,7 +5,7 @@ const IMAGES = ["https://oaidalleapiprodscus.blob.core.windows.net/private/org-e
 
 const {subscribe, set, update} = writable(IMAGES);
 
-const addImage = (/** @type {string} */ image) => update(images => {
+export const addImage = (/** @type {string} */ image) => update(images => {
     return [...images, image];
 });
 
