@@ -652,10 +652,6 @@ select{
   margin-bottom: 1.75rem;
 }
 
-.ml-4{
-  margin-left: 1rem;
-}
-
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -678,6 +674,10 @@ select{
 
 .contents{
   display: contents;
+}
+
+.h-\[45px\]{
+  height: 45px;
 }
 
 .w-\[512px\]{
@@ -744,6 +744,11 @@ select{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
