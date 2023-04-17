@@ -48,7 +48,7 @@
 </script>
 
 <div>
-  <Button>Dark mode</Button>
+  <Button></Button>
   <h1 class="text-3xl font-bold text-[#57534e] text-center my-7">
     Image Generator
   </h1>

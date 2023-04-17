@@ -5,7 +5,7 @@
     </script>
     <button on:click={toggle}>
         <img src="/toggle.png" alt="">
-        <!-- <slot/> -->
+        <slot/>
     </button>
     <style>
         button {
