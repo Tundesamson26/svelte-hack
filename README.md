@@ -1,29 +1,38 @@
-# create-svelte
+# Introduction
+Artificial intelligence art is any artwork, particularly images and musical compositions, created through the use of artificial intelligence (AI) programs, such as [text-to-image models](https://en.wikipedia.org/wiki/Text-to-image_model) and musical generators. It is sometimes confused with digital art. While both AI art and digital art involve the use of technology, AI art is characterised by its use of generative algorithms and deep learning techniques that can autonomously produce art without direct input from human artists.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The guide will implement svelte to generate images with the OpenAI model
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+The knowledge of the following is required:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Basic understanding of HTML, CSS, and JavaScript
+- Node and its package manager, npm (run the command `node -v && npm -v` to verify you have them installed or install them from [here](https://nodejs.org/en/))
+- Understanding Svelte is very essential
+## Getting started with Svelte
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[Svelte](https://svelte.dev/) is a radical new approach to building user interfaces. Svelte is a compiler and syntax. The entire Svelte project compiles into a single JavaScript file; it is not an external library included in a bundle like React, which allows Svelte projects to be tiny and fast.
 
-## Developing
+To set up your Svelte project, go to your terminal or command line and run:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
+    npm create svelte@latest text-to-image
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Once you've created a project, navigate to the `text-to-image`  directory and install dependencies with the following:
+
+
+    npm install
+
+Finally, start a development server with the following:
+
+
+    npm run dev
+
+**Installing TailwindCSS**
+[TailwindCSS](https://tailwindcss.com/) is a utility-first CSS framework packed with classes to help us style our web page. To use it in the application, follow this guide in the [TailwindCSS docs](https://tailwindcss.com/docs/guides/sveltekit).
+
+## Creating the AI-generated image UI
 
 ## Building
 
