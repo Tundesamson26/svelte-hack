@@ -50,12 +50,27 @@ const configuration = new Configuration({
   });
 
   const openai = new OpenAIApi(configuration);
+  const fetchData = async () => {
+    try {
+      isLoading = true;
+      const response = await openai.createImage({
+        prompt: prompt,
+        n: 2,
+        size: "512x512",
+      });
+      setImage(response.data.data[0].url);
+      isLoading = false;
+    } catch (err) {
+      isLoading = false;
+      console.log(err);
+    }
+  };
 ```
 
 ## Creating the AI-generated image UI
 The AI project is a text-to-image prompt that convert your text prompt into a useable image.
 
-The project demo can be found [here]()
+The project demo can be found [here](https://svelte-hack.pages.dev/)
 
 https://www.loom.com/share/9df86abb77094b29abcb6c30aae106c4
 
