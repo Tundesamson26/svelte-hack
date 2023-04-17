@@ -36,12 +36,12 @@ npm run dev
 [TailwindCSS](https://tailwindcss.com/) is a utility-first CSS framework packed with classes to help us style our web page. To use it in the application, follow this guide in the [TailwindCSS docs](https://tailwindcss.com/docs/guides/sveltekit).
 
 ## Integrating OpenAI 
-To utilize the power of OpenAI, you need to install openai  into your project like this:
+To utilize the power of OpenAI, you need to install `openai` into your project like this:
 
 ```
 npm install openai
 ```
-Next, you import the `openai` independency in your like this:
+Next, in your `+page.svelte`, you import the `openai` independency in your like this:
 
 ```
 const configuration = new Configuration({
