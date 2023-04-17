@@ -16,23 +16,48 @@ The knowledge of the following is required:
 
 To set up your Svelte project, go to your terminal or command line and run:
 
-
-    npm create svelte@latest text-to-image
+```
+npm create svelte@latest text-to-image
+```
 
 Once you've created a project, navigate to the `text-to-image`  directory and install dependencies with the following:
 
-
-    npm install
+```
+npm install
+```
 
 Finally, start a development server with the following:
 
-
-    npm run dev
+```
+npm run dev
+```
 
 **Installing TailwindCSS**
 [TailwindCSS](https://tailwindcss.com/) is a utility-first CSS framework packed with classes to help us style our web page. To use it in the application, follow this guide in the [TailwindCSS docs](https://tailwindcss.com/docs/guides/sveltekit).
 
+## Integrating OpenAI 
+To utilize the power of OpenAI, you need to install openai  into your project like this:
+
+```
+npm install openai
+```
+Next, you import the `openai` independency in your like this:
+
+```
+const configuration = new Configuration({
+    organization: "org-e4LTVTBp1C2nhyRwB1ZHhKL8",
+    apiKey: import.meta.env.VITE_API_KEY,
+  });
+
+  const openai = new OpenAIApi(configuration);
+```
+
 ## Creating the AI-generated image UI
+The AI project is a text-to-image prompt that convert your text prompt into a useable image.
+
+The project demo can be found [here]()
+
+https://www.loom.com/share/9df86abb77094b29abcb6c30aae106c4
 
 ## Building
 
